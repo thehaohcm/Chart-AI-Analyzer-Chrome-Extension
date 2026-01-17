@@ -1,0 +1,114 @@
+═══════════════════════════════════════════════════════════════
+  🎉 CHART AI ASSISTANT - MULTI-PROVIDER UPDATE
+═══════════════════════════════════════════════════════════════
+
+✨ NEW FEATURE: Support for Multiple AI Providers!
+
+WHAT'S NEW:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ OpenAI Support (Original)
+   • GPT-4o (Recommended)
+   • GPT-4o Mini (Cheaper)
+   • GPT-4 Turbo
+   • ChatGPT-4o Latest
+
+✅ Google Gemini Support (NEW!)
+   • Gemini 1.5 Pro (Recommended)
+   • Gemini 1.5 Flash (Fastest, Cheapest)
+   • Gemini Pro Vision
+   • FREE TIER AVAILABLE!
+
+✅ Anthropic Claude Support (NEW!)
+   • Claude 3 Opus (Best Quality)
+   • Claude 3 Sonnet (Balanced)
+   • Claude 3 Haiku (Fast & Cheap)
+
+COST COMPARISON (100 analyses/month):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Provider          Model              Cost/Month   Quality
+───────────────────────────────────────────────────────────────
+Gemini           1.5 Flash          $0.20 ⭐     Good
+OpenAI           GPT-4o Mini        $0.50        Very Good
+Claude           3 Haiku            $0.50        Good
+Gemini           1.5 Pro            $0.80        Excellent
+Claude           3 Sonnet           $1.50        Very Good
+OpenAI           GPT-4o             $2.50        Excellent
+Claude           3 Opus             $7.50        Excellent
+
+RECOMMENDATIONS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+👶 Beginners:    Gemini 1.5 Flash (Free tier + cheap)
+📈 Active:       Gemini 1.5 Pro or GPT-4o Mini
+💼 Professional: OpenAI GPT-4o or Claude 3 Sonnet
+
+HOW TO USE:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Click extension icon
+2. Click ⚙️ Settings
+3. Select Provider (OpenAI / Gemini / Claude)
+4. Choose Model
+5. Enter API Key
+6. Save Configuration
+
+GET API KEYS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+OpenAI:    https://platform.openai.com/api-keys
+Gemini:    https://aistudio.google.com/app/apikey (FREE!)
+Anthropic: https://console.anthropic.com/
+
+BENEFITS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💰 Save up to 90% on costs (Gemini vs GPT-4o)
+🆓 Free tier available (Gemini)
+�� Switch providers anytime
+🛡️ Redundancy if one provider is down
+🎯 Choose best model for each task
+📊 Compare quality across providers
+
+MIGRATION:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+If you were using OpenAI before:
+✅ Your data is preserved
+✅ OpenAI still works (default)
+✅ No action required
+✅ Try new providers optional
+
+FILES UPDATED:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+• scripts/config.js      → Multi-provider config
+• scripts/ai.js          → Provider routing + APIs
+• popup/popup.html       → Provider selection UI
+• popup/popup.js         → Provider logic
+• popup/popup.css        → New styles
+
+NEW DOCUMENTATION:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+• MULTI_PROVIDER_GUIDE.md → Complete provider guide
+• WHATS_NEW.md            → Feature announcement
+• README.md               → Updated with providers
+
+QUICK START:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Recommended: Try Gemini first (free tier)
+
+1. Get key: https://aistudio.google.com/app/apikey
+2. Open extension → Settings
+3. Select "Google Gemini"
+4. Choose "Gemini 1.5 Flash"
+5. Paste your key
+6. Save!
+
+Cost: FREE (60 requests/min free tier)
+
+═══════════════════════════════════════════════════════════════
+📖 Read MULTI_PROVIDER_GUIDE.md for detailed comparison
+═══════════════════════════════════════════════════════════════

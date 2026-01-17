@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chart AI Assistant</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <h1>📊 Chart AI Assistant</h1>
+      <p class="subtitle">AI-powered chart analysis with trading memory</p>
+    </header>
+
+    <!-- API Key Setup (shown if not configured) -->
+    <div id="apiKeySetup" class="section" style="display: none;">
+      <div class="warning">
+        ⚠️ Please configure your AI provider and API key
+      </div>
+      
+      <div class="input-group">
+        <label for="providerSelect">AI Provider:</label>
+        <select id="providerSelect" class="input-field">
+          <option value="openai">OpenAI (GPT-4o)</option>
+          <option value="gemini">Google Gemini</option>
+          <option value="anthropic">Anthropic Claude</option>
+        </select>
+      </div>
+      
+      <div class="input-group">
+        <label for="modelSelect">Model:</label>
+        <select id="modelSelect" class="input-field">
+          <option value="gpt-4o">GPT-4o (Recommended)</option>
+        </select>
+      </div>
+      
+      <div class="input-group">
+        <label for="apiKeyInput" id="apiKeyLabel">API Key:</label>
+        <input 
+          type="password" 
+          id="apiKeyInput" 
+          placeholder="Enter your API key" 
+          class="input-field"
+        />
+      </div>
+      
+      <div class="info-box" id="providerInfo">
+        <strong>OpenAI:</strong> Get your API key at <a href="https://platform.openai.com/api-keys" target="_blank">platform.openai.com/api-keys</a>
+      </div>
+      
+      <button id="saveApiKeyBtn" class="btn btn-primary">Save Configuration</button>
+    </div>
+
+    <!-- Main Interface -->
+    <div id="mainInterface" class="section">
+      <!-- Input Section -->
+      <div class="input-section">
+        <div class="input-row">
+          <div class="input-group">
+            <label for="assetInput">Asset (optional):</label>
+            <input 
+              type="text" 
+              id="assetInput" 
+              placeholder="e.g., BTC/USD, AAPL" 
+              class="input-field"
+            />
+          </div>
+          <div class="input-group">
+            <label for="timeframeInput">Timeframe:</label>
+            <select id="timeframeInput" class="input-field">
+              <option value="">Auto-detect</option>
+              <option value="1m">1 Minute</option>
+              <option value="5m">5 Minutes</option>
+              <option value="15m">15 Minutes</option>
+              <option value="1h">1 Hour</option>
+              <option value="4h">4 Hours</option>
+              <option value="1d">1 Day</option>
+              <option value="1w">1 Week</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Action Button -->
+        <button id="captureBtn" class="btn btn-primary btn-large">
+          📸 Capture & Analyze Chart
+        </button>
+      </div>
+
+      <!-- Preview Section (hidden by default) -->
+      <div id="previewSection" class="preview-section" style="display: none;">
+        <h3>Screenshot Preview:</h3>
+        <img id="screenshotPreview" alt="Chart screenshot" />
+      </div>
+
+      <!-- Analysis Section -->
+      <div id="analysisSection" class="analysis-section">
+        <div class="section-header">
+          <h3>AI Analysis</h3>
+          <button id="copyAnalysisBtn" class="btn btn-secondary btn-small" style="display: none;">
+            📋 Copy
+          </button>
+        </div>
+        <div id="analysisResult" class="result-box">
+          <p class="placeholder">Click "Capture & Analyze" to get AI insights...</p>
+        </div>
+      </div>
+
+      <!-- Loading Overlay -->
+      <div id="loadingOverlay" class="loading-overlay" style="display: none;">
+        <div class="spinner"></div>
+        <p>Analyzing chart...</p>
+      </div>
+
+      <!-- Trade Logging Section -->
+      <div id="tradeLogSection" class="trade-log-section" style="display: none;">
+        <h3>Log Trade Outcome</h3>
+        <p class="info-text">Help improve future analysis by logging this trade</p>
+        
+        <div class="trade-log-inputs">
+          <div class="button-group">
+            <button class="btn btn-success log-btn" data-outcome="win">✅ Win</button>
+            <button class="btn btn-warning log-btn" data-outcome="loss">❌ Loss</button>
+            <button class="btn btn-neutral log-btn" data-outcome="be">➖ Break Even</button>
+          </div>
+          
+          <div class="input-group">
+            <label for="tradeNoteInput">Note (optional):</label>
+            <textarea 
+              id="tradeNoteInput" 
+              placeholder="What went well or wrong?"
+              class="textarea-field"
+              rows="2"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats Section -->
+      <div class="stats-section">
+        <button id="viewStatsBtn" class="btn btn-secondary btn-small">
+          📊 View Trading Stats
+        </button>
+      </div>
+
+      <!-- Settings Link -->
+      <div class="footer">
+        <button id="settingsBtn" class="link-btn">⚙️ Settings</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="../scripts/config.js"></script>
+  <script src="../scripts/memory.js"></script>
+  <script src="../scripts/ai.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
